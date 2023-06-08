@@ -1,0 +1,15 @@
+<sly data-sly-use.dynamicComponent = "com.micron.web.core.models.DynamicComponentModel"/>
+
+<sly data-sly-test.hasType="${dynamicComponent.productType}">
+    <pre>This product is a: ${properties.productType}</pre>
+    <pre>Specs</pre>
+    <pre data-sly-test="${dynamicComponent.productType == 'phone' && dynamicComponent.operatingSystem}">Operating system: ${dynamicComponent.operatingSystem}</pre>
+    <pre data-sly-test="${dynamicComponent.productType == 'phone' && dynamicComponent.camera}">Camera: ${dynamicComponent.camera}</pre>
+    <pre data-sly-test="${dynamicComponent.productType == 'laptop' && dynamicComponent.screenSize}">Screen size: ${dynamicComponent.screenSize}</pre>
+    <pre data-sly-test="${dynamicComponent.productType == 'laptop' && dynamicComponent.keyboardLayout}">Keyboard layout: ${dynamicComponent.keyboardLayout}</pre>
+    <pre data-sly-test="${dynamicComponent.productType == 'tv' && dynamicComponent.supportHdr}">Supports HDR: ${dynamicComponent.supportHdr}</pre>
+    <pre data-sly-test="${dynamicComponent.productType == 'tv' && !dynamicComponent.supportHdr}">Supports HDR: false</pre>
+    <pre data-sly-test="${dynamicComponent.productType == 'tv' && dynamicComponent.resolution}">Resolution: ${dynamicComponent.resolution}</pre>
+</sly>
+<pre data-sly-test="${!hasType}">Dynamic Component</pre>
+

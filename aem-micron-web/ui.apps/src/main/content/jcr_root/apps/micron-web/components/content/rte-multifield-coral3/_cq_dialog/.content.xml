@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Accordion"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <tab1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Accordion Configuration"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <accordionData
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        fieldLabel="Accordion Data"
+                                        maxItems="8">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                            acs-commons-nested="\0"
+                                            name="./accordionDataTouch">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <accordionHeader
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Number sequence before Heading text is auto generated"
+                                                    fieldLabel="accordionHeader"
+                                                    name="./accordionHeader"
+                                                    required="{Boolean}true"/>
+                                                <accordionContent
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                    fieldLabel="Content"
+                                                    name="./accordionContent"
+                                                    required="{Boolean}true"
+                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                <accordionImage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="image"
+                                                    name="./accordionImage"
+                                                    rootPath="/content/dam"/>
+                                                <accordionExpanded
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Select yes to expand Accordion and select no to collapse Accordion"
+                                                    fieldLabel="accordionExpanded"
+                                                    name="./accordionExpanded">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <yes
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Yes"
+                                                            value="yes"/>
+                                                        <no
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="No"
+                                                            value="no"/>
+                                                    </items>
+                                                </accordionExpanded>
+                                                <accordionImageType
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="accordionImageType"
+                                                    name="./accordionImageType">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <right
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Image Right"
+                                                            value="img-right"/>
+                                                        <left
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Image Left"
+                                                            value="img-left"/>
+                                                    </items>
+                                                </accordionImageType>
+                                                <accordionImageAlt
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="imageAltText"
+                                                    name="./accordionImageAlt"/>
+                                                <accordionImageTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="hoverText"
+                                                    name="./accordionImageTitle"/>
+                                            </items>
+                                        </field>
+                                    </accordionData>
+                                </items>
+                            </column>
+                        </items>
+                    </tab1>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

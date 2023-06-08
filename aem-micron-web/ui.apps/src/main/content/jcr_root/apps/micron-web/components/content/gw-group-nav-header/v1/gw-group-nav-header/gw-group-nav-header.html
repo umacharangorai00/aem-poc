@@ -1,0 +1,8 @@
+<sly data-sly-use.model=""
+     data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+
+<gw-group-nav-header id="${component.id}" class="${wcmmode.preview || wcmmode.edit ? 'web-component' : ''}" content="${model.data}"></gw-group-nav-header>
+
+<sly data-sly-call="${clientlib.js @ categories='assa-abloy-onecms.webcomponent.gw-group-nav-header'}"/>
+
+<sly data-sly-test="${wcmmode.edit}" data-sly-call="${clientlib.css @ categories='assa-abloy-onecms.gw-group-nav-header'}"/>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aem-micron-web.iml" filepath="$PROJECT_DIR$/aem-micron-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all/aem-micron-web.all.iml" filepath="$PROJECT_DIR$/all/aem-micron-web.all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/aem-micron-web.core.iml" filepath="$PROJECT_DIR$/core/aem-micron-web.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dispatcher/aem-micron-web.dispatcher.ams.iml" filepath="$PROJECT_DIR$/dispatcher/aem-micron-web.dispatcher.ams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/it.tests/aem-micron-web.it.tests.iml" filepath="$PROJECT_DIR$/it.tests/aem-micron-web.it.tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.apps/aem-micron-web.ui.apps.iml" filepath="$PROJECT_DIR$/ui.apps/aem-micron-web.ui.apps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.apps.structure/aem-micron-web.ui.apps.structure.iml" filepath="$PROJECT_DIR$/ui.apps.structure/aem-micron-web.ui.apps.structure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.config/aem-micron-web.ui.config.iml" filepath="$PROJECT_DIR$/ui.config/aem-micron-web.ui.config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.content/aem-micron-web.ui.content.iml" filepath="$PROJECT_DIR$/ui.content/aem-micron-web.ui.content.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.frontend/aem-micron-web.ui.frontend.iml" filepath="$PROJECT_DIR$/ui.frontend/aem-micron-web.ui.frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.tests/aem-micron-web.ui.tests.iml" filepath="$PROJECT_DIR$/ui.tests/aem-micron-web.ui.tests.iml" />
+    </modules>
+  </component>
+</project>

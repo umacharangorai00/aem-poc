@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Header"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.authoring.dialog.nav.header.show-hide]"
+    height="50vh"
+    width="33vw">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                granite:class="cq-dialog-editorial-tabs"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <appearance
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Appearance"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Layout"
+                                name="./layout">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <floating
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="{Boolean}true"
+                                        text="Floating"
+                                        value="floating"/>
+                                    <full-width
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Full-width"
+                                        value="full-width"/>
+                                </items>
+                            </layout>
+                            <transparency
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Transparency"
+                                name="./transparency">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <solid
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="{Boolean}true"
+                                        text="Solid"
+                                        value="solid"/>
+                                    <translucent
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Translucent"
+                                        value="translucent"/>
+                                    <transparent
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Transparent"
+                                        value="transparent"/>
+                                </items>
+                            </transparency>
+                            <color
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Color"
+                                name="./color">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="{Boolean}true"
+                                        text="Default"
+                                        value="default"/>
+                                    <inverted
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Inverted"
+                                        value="inverted"/>
+                                </items>
+                            </color>
+                        </items>
+                    </appearance>
+                    <market-navigation
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Market navigation"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <modal-title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Title"
+                                name="./locationSwitcher/title"/>
+                            <modal-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                name="./locationSwitcher/text"
+                                useFixedInlineToolbar="{Boolean}true">
+                                <rtePlugins
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceSuperType="/apps/assa-abloy-onecms/components/content/common/dialog-parts/rte-with-table/assa-abloy-rte-with-table/rtePlugins"/>
+                                <uiSettings
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceSuperType="/apps/assa-abloy-onecms/components/content/common/dialog-parts/rte-with-table/assa-abloy-rte-with-table/uiSettings"/>
+                            </modal-text>
+                            <market-label
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Location dropdown title"
+                                name="./locationSwitcher/marketDropdown/title"/>
+                            <language-label
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Language list title"
+                                name="./locationSwitcher/languageListTitle"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Links">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./locationSwitcher/links">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well"
+                                            margin="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <link-text
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Link text"
+                                                    name="./text"/>
+                                                <link-url
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Link URL"
+                                                    name="./url"
+                                                    nodeTypes="cq:Page"
+                                                    rootPath="/content"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </links>
+                            <settings-section
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Settings"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <market-switcher-name
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="This value will override the market name displayed in the top bar (to be used for Global markets)."
+                                        fieldLabel="Override name in top bar"
+                                        name="./locationSwitcher/trigger"/>
+                                    <select-a-location-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="This value will be used in the location dropdown in case the market is marked as 'hide from navigation' (example: Select a location)."
+                                        fieldLabel="Location fallback text"
+                                        name="./locationSwitcher/marketDropdown/text"/>
+                                </items>
+                            </settings-section>
+                        </items>
+                    </market-navigation>
+                    <top-bar-links
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Top bar links"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <visible
+                                granite:class="cq-dialog-checkbox-showhide-top-bar"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/switch"
+                                fieldLabel="Display top bar"
+                                name="./topbar/visible"
+                                uncheckedValue="{Boolean}false"
+                                value="{Boolean}true"/>
+                            <top-bar-links-section
+                                granite:class="showhidetarget-top-bar-links-section"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Top bar links"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <modal-link-visible
+                                        granite:class="cq-dialog-checkbox-showhide-modal-link"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/switch"
+                                        fieldLabel="ASSA ABLOY Group"
+                                        name="./divisionBrandSwitcherData/visible"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true"/>
+                                    <links
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Please provide dropdown options"
+                                        fieldLabel="Links">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            name="./topbar/links">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/well"
+                                                    margin="{Boolean}true">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <link-text
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Link text"
+                                                            name="./text"/>
+                                                        <link-url
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Link URL"
+                                                            name="./url"
+                                                            nodeTypes="cq:Page"
+                                                            rootPath="/content"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </links>
+                                </items>
+                            </top-bar-links-section>
+                        </items>
+                    </top-bar-links>
+                    <group-tab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Group"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <logo-type
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Logotype"
+                                name="./divisionBrandSwitcherData/logotype"
+                                nodeTypes="dam:Asset"
+                                rootPath="/content/dam"/>
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Title"
+                                name="./divisionBrandSwitcherData/title"/>
+                            <text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Text"
+                                name="./divisionBrandSwitcherData/text"/>
+                            <link-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Link text"
+                                name="./divisionBrandSwitcherData/link/text"/>
+                            <link-url
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Link URL"
+                                name="./divisionBrandSwitcherData/link/url"
+                                nodeTypes="cq:Page"
+                                rootPath="/content"/>
+                            <desktop-view-information
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Desktop"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <image
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                        allowUpload="{Boolean}false"
+                                        autoStart="{Boolean}false"
+                                        class="cq-droptarget"
+                                        fileNameParameter="./divisionBrandSwitcherData/image/desktop/fileName"
+                                        fileReferenceParameter="./divisionBrandSwitcherData/image/desktop/fileReference"
+                                        mimeTypes="[image/gif,image/jpeg,image/png,image/tiff]"
+                                        multiple="{Boolean}false"
+                                        name="./divisionBrandSwitcherData/image/desktop/file"
+                                        uploadUrl="${suffix.path}"
+                                        useHTML5="{Boolean}true"/>
+                                    <alt-description
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Alt description"
+                                        name="./divisionBrandSwitcherData/image/desktop/altDescription"/>
+                                </items>
+                            </desktop-view-information>
+                            <mobile-view-information
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Mobile"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <image
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                        allowUpload="{Boolean}false"
+                                        autoStart="{Boolean}false"
+                                        class="cq-droptarget"
+                                        fileNameParameter="./divisionBrandSwitcherData/image/mobile/fileName"
+                                        fileReferenceParameter="./divisionBrandSwitcherData/image/mobile/fileReference"
+                                        mimeTypes="[image/gif,image/jpeg,image/png,image/tiff]"
+                                        multiple="{Boolean}false"
+                                        name="./divisionBrandSwitcherData/image/mobile/file"
+                                        uploadUrl="${suffix.path}"
+                                        useHTML5="{Boolean}true"/>
+                                    <alt-description
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Alt description"
+                                        name="./divisionBrandSwitcherData/image/mobile/altDescription"/>
+                                </items>
+                            </mobile-view-information>
+                        </items>
+                    </group-tab>
+                    <divisions-tab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Divisions"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Section title"
+                                name="./divisionBrandSwitcherData/divisions/title"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Links">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./divisionBrandSwitcherData/divisions/links">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well"
+                                            margin="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <division-title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Title"
+                                                    name="./title"/>
+                                                <division-text
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Text"
+                                                    name="./text"/>
+                                                <division-link-url
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Link URL"
+                                                    name="./link/url"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </links>
+                        </items>
+                    </divisions-tab>
+                    <brands-tab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Brands"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <link-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Section link text"
+                                name="./divisionBrandSwitcherData/brands/link/text"/>
+                            <link-url
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Section link URL"
+                                name="./divisionBrandSwitcherData/brands/link/url"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Links">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./divisionBrandSwitcherData/brands/links">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well"
+                                            margin="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <logo-type
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Logotype"
+                                                    name="./logotype"
+                                                    nodeTypes="dam:Asset"
+                                                    rootPath="/content/dam"/>
+                                                <logo-type-alt
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Logotype alt description"
+                                                    name="./alt"/>
+                                                <link-url
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Link URL"
+                                                    name="./linkURL"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </links>
+                        </items>
+                    </brands-tab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

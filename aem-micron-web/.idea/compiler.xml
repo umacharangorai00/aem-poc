@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="aem-micron-web.ui.tests" />
+        <module name="aem-micron-web.it.tests" />
+        <module name="aem-micron-web.ui.config" />
+        <module name="aem-micron-web.ui.apps" />
+        <module name="aem-micron-web.all" />
+        <module name="aem-micron-web.ui.content" />
+        <module name="aem-micron-web.core" />
+        <module name="aem-micron-web.ui.apps.structure" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aem-micron-web" target="1.8" />
+      <module name="aem-micron-web.all" target="1.8" />
+      <module name="aem-micron-web.core" target="1.8" />
+      <module name="aem-micron-web.dispatcher.ams" target="1.8" />
+      <module name="aem-micron-web.it.tests" target="1.8" />
+      <module name="aem-micron-web.ui.apps" target="1.8" />
+      <module name="aem-micron-web.ui.apps.structure" target="1.8" />
+      <module name="aem-micron-web.ui.config" target="1.8" />
+      <module name="aem-micron-web.ui.content" target="1.8" />
+      <module name="aem-micron-web.ui.frontend" target="1.8" />
+      <module name="aem-micron-web.ui.tests" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

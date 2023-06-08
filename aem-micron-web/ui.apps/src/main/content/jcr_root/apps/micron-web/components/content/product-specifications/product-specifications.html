@@ -1,0 +1,42 @@
+<div data-sly-use.specification="com.micron.web.core.models.Specifications">
+
+    <div class="row">
+        <div id="product-details-content" data-magellan-target="product-details-content">
+            <div class="product-specs-resources">
+                <div class="columns small-12">                       
+                   <section id="spec" data-magellan-target="spec">
+                      <h3>Specifications</h3>
+                      <div class="row table">   
+                            <div data-sly-list="${specification.specificationDetails}">
+								<div class="column small-12 large-6">
+                                	<table class="spec-table">
+                                           <thead>
+                                              <tr>
+                                                 <th>${item.heading}</th>
+                                                 <th></th>
+                                              </tr>
+                                           </thead>
+                                           <tbody>
+                                                <div data-sly-list.attribute="${item.attributes}">
+                                                     <tr> 
+                                                       <td>${attribute.attributeName}</td>
+                                                       <td class="spec-value">${attribute.attributeValue}</td>                   
+                                                     </tr>   
+                                                </div>             
+                                           </tbody>
+                                    </table>
+                                </div>  
+                            </div>
+               			</div>
+                	</section>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

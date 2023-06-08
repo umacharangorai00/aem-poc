@@ -1,0 +1,4 @@
+com\micron\web\it\tests\CreatePageIT.class
+com\micron\web\it\tests\GetPageIT.class
+com\micron\web\it\tests\HtmlUnitClient.class
+com\micron\web\it\tests\PublishPageValidationIT.class

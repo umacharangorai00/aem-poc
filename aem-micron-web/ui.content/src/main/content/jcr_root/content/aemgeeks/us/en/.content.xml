@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <author/>
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2023-04-21T18:11:29.427+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aemgeeks/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
+        sling:resourceType="aemgeeks/components/page"
+        pageTitle="AEM GEEKS">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemgeeks/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemgeeks/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemgeeks/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemgeeks/components/container"
+                    layout="responsiveGrid">
+                    <teaser
+                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Epic Journey"
+                        sling:resourceType="aemgeeks/components/teaser"
+                        actionsEnabled="false"
+                        descriptionFromPage="false"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </teaser>
+                    <teaser_copy
+                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Epic Journey"
+                        sling:resourceType="aemgeeks/components/teaser"
+                        actionsEnabled="false"
+                        descriptionFromPage="false"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </teaser_copy>
+                    <teaser_copy_1579324932
+                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Epic Journey"
+                        sling:resourceType="aemgeeks/components/teaser"
+                        actionsEnabled="false"
+                        descriptionFromPage="false"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </teaser_copy_1579324932>
+                    <helloworld
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemgeeks/components/helloworld"
+                        text="lalala :)"/>
+                    <gw_group_accordion
+                        cq:styleIds="[theme-alt-2]"
+                        jcr:lastModified="{Date}2023-04-20T00:16:42.231+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemgeeks/components/content/gw-group-accordion/v1/gw-group-accordion"
+                        text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, neque a commodo scelerisque, ipsum odio viverra mauris, ut laoreet sapien elit nec leo.&lt;/p>"
+                        textIsRich="true"
+                        title="Lorem ipsum">
+                        <configuration jcr:primaryType="nt:unstructured">
+                            <padding
+                                jcr:primaryType="nt:unstructured"
+                                bottom="{Boolean}true"
+                                top="{Boolean}true"/>
+                        </configuration>
+                        <sections jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                text="Multifield component allows to add/reorder/remove multiple instances of a field.  In the simplest case this is a simple form input field (e.g. textfield, textarea) but it can also be a complex component acting as an aggregate of multiple subcomponents (e.g. address entry).  The field to be included is defined in the subnode named field. Regardless of the component used, Multifield assumes they all write to the same property (defined by the name property of the field subnode) thus the resulting value will always be multi value.  When rendering existing entries, the Multifield will iterate over the multi value, get each value, set it in the field and let the field render it.  For example if the field is a text field with a name value of “fruits”, and you use Multifield to add three text fields and set them with values “apple”, “orange” and “banana”, the content node will get the following property after saving:"/>
+                        </sections>
+                    </gw_group_accordion>
+                    <gw_group_references
+                        cq:styleIds="[theme-alt-2]"
+                        jcr:lastModified="{Date}2023-04-19T20:44:55.980+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemgeeks/components/gw-group-references/v1/gw-group-references"
+                        isComponentListingChildPages="{Boolean}true"
+                        layout="grid"
+                        pageList="[/content]"
+                        referenceType="parentPage"
+                        text="&lt;p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, neque a commodo scelerisque, ipsum odio viverra mauris, ut laoreet sapien elit nec leo. &lt;/p>"
+                        title="Lorem ipsum">
+                        <configuration
+                            jcr:primaryType="nt:unstructured"
+                            cardSizeGrid="small"
+                            reversedLayout="{Boolean}false">
+                            <padding
+                                jcr:primaryType="nt:unstructured"
+                                bottom="{Boolean}true"
+                                top="{Boolean}true"/>
+                        </configuration>
+                    </gw_group_references>
+                    <accordion
+                        jcr:lastModified="{Date}2023-04-19T21:00:24.878+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemgeeks/components/content/accordion"/>
+                    <multiexporter
+                        jcr:lastModified="{Date}2023-04-19T21:13:25.965+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemgeeks/components/content/multiexporter"/>
+                    <rich_text
+                        jcr:lastModified="{Date}2023-04-19T23:28:05.341+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemgeeks/components/content/rich-text"
+                        text="&lt;p>dcdccd&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <gw_group_stories
+                        cq:styleIds="[theme-alt-2]"
+                        jcr:lastModified="{Date}2023-04-19T23:59:29.468+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemgeeks/components/content/gw-group-stories/v1/gw-group-stories"
+                        alphabeticallyAZ="A-Z"
+                        alphabeticallyZA="Z-A"
+                        layout="slider"
+                        loading="Loading..."
+                        newestFirst="Newest first"
+                        nothingMoreToShow="Nothing more to show"
+                        oldestFirst="Oldest first"
+                        result="result"
+                        results="results"
+                        showingXofY="Showing {{current}} of {{max}}"
+                        showMore="Show more"
+                        sortBy="Sort by"
+                        text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, neque a commodo scelerisque, ipsum odio viverra mauris, ut laoreet sapien elit nec leo.&lt;/p>"
+                        title="Lorem ipsum">
+                        <configuration jcr:primaryType="nt:unstructured">
+                            <padding
+                                jcr:primaryType="nt:unstructured"
+                                bottom="{Boolean}true"
+                                top="{Boolean}true"/>
+                        </configuration>
+                        <primaryCard
+                            jcr:primaryType="nt:unstructured"
+                            visible="{Boolean}true"/>
+                    </gw_group_stories>
+                    <gw_group_nav_header
+                        jcr:lastModified="{Date}2023-04-21T16:23:37.527+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemgeeks/components/content/header/gw-group-nav-header/v1/gw-group-nav-header"/>
+                    <author_books
+                        jcr:lastModified="{Date}2023-04-21T18:11:29.425+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemgeeks/components/content/author-books"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+    <home/>
+    <component-info/>
+</jcr:root>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="8574707e-ad0a-483f-a568-ec7e2aa01c2c">
+    <jcr:content
+        cq:name="category"
+        cq:parentPath="/content/dam/micron-web/us/en/content-fragment"
+        jcr:lastModified="{Date}2023-04-12T12:38:41.786+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Category"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2023-04-12T12:38:41.786+05:30">
+        <data
+            cq:model="/conf/micron-web/settings/dam/cfm/models/category-content-fragment-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                description="Engineered by Micron® with the latest Gen4 NVMe technology, the Crucial P3 Plus comes in generous capacities and offers flexible backward compatibility for most Gen3 systems."
+                description_x0040_ContentType="text/plain"
+                description_x0040_LastModified="{Date}2023-04-12T12:35:12.785+05:30"/>
+            <category1
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                _x0040_variationCreationDate="{Date}2023-04-12T12:36:44.272+05:30"
+                description="Crucial SATA SSDs are one of the easiest ways to get the speed of a new computer without the price. Boot up faster, load files quicker, and improve overall system responsiveness with the Crucial MX500 and BX500 drives. "
+                description_x0040_ContentType="text/plain"
+                description_x0040_LastModified="{Date}2023-04-12T12:38:07.017+05:30"/>
+            <category2
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                _x0040_variationCreationDate="{Date}2023-04-12T12:38:21.844+05:30"
+                description="Crucial external SSDs are up to 7.5x faster3 than traditional hard drives and work with a wide variety of devices. With Crucial X8 and X6 portable SSDs, take your files, backups, movies, games, or photos with you everywhere you go."
+                description_x0040_ContentType="text/plain"
+                description_x0040_LastModified="{Date}2023-04-12T12:38:41.761+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <category1
+                    jcr:description="\0"
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Category1"
+                    name="category1">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[description:9be9b738-eb42-49a2-be13-3c1e80f12684]"/>
+                </category1>
+                <category2
+                    jcr:description="\0"
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Category2"
+                    name="category2">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[description:58e5b105-afd2-4542-ab73-38507a5b3525]"/>
+                </category2>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

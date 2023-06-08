@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="cda33f45-9032-411e-a8d1-d89f462a4ae7">
+    <jcr:content
+        cq:name="dram"
+        cq:parentPath="/content/dam/micron-web/us/en/content-fragment"
+        jcr:lastModified="{Date}2023-04-17T11:54:43.233+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="dram"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2023-04-17T11:54:43.233+05:30">
+        <data
+            cq:model="/conf/micron-web/settings/dam/cfm/models/category-content-fragment-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                description="Accelerate your time to market with quality DRAM components — rigorously tested for a wide range of applications. &#xa;From the extreme temperature and performance needs of industrial and automotive applications to the exacting specs of enterprise systems, &#xa;we have the right memory solution for your design."
+                description_x0040_ContentType="text/plain"
+                description_x0040_LastModified="{Date}2023-04-14T17:42:31.499+05:30"
+                title="DRAM"
+                title_x0040_LastModified="{Date}2023-04-17T11:54:24.447+05:30"/>
+            <ddr3
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                _x0040_variationCreationDate="{Date}2023-04-14T17:41:26.512+05:30"
+                description="DDR3 is an evolutionary transition from DDR2. DDR3 point-to-point systems are similar to DDR2 point-to-point systems; both require similar design principles. But given&#xa;that DDR3 signaling is more critical, DDR3 point-to-point systems require an emphasis&#xa;on improving the data bus signaling."
+                description_x0040_ContentType="text/plain"
+                description_x0040_LastModified="{Date}2023-04-14T17:42:25.338+05:30"
+                title="DDR3"
+                title_x0040_LastModified="{Date}2023-04-17T11:54:33.996+05:30"/>
+            <ddr4
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                _x0040_variationCreationDate="{Date}2023-04-14T17:41:54.848+05:30"
+                description="DDR4 added over 30 new features with a significant number of them offering improved&#xa;signaling or debug capabilities: CA parity, multipurpose register, programmable write&#xa;preamble, programmable read preamble, read preamble training, write CRC, read DBI,&#xa;write DBI, VREFDQ calibration, and per DRAM addressability. It is beyond the scope of&#xa;this document to provide an in-depth explanation of these features; however, a successful DDR4 high-speed design will require the use of these new features and they should&#xa;not be overlooked.."
+                description_x0040_ContentType="text/plain"
+                description_x0040_LastModified="{Date}2023-04-14T17:42:15.945+05:30"
+                title="DDR4"
+                title_x0040_LastModified="{Date}2023-04-17T11:54:43.210+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <ddr3
+                    jcr:description="\0"
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="ddr3"
+                    name="ddr3">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[description:8398c3cc-6495-4f85-bc61-bbdd57f1b2b1]"/>
+                </ddr3>
+                <ddr4
+                    jcr:description="\0"
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="ddr4"
+                    name="ddr4">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[description:abb000f3-3012-4038-b8d5-d82884b2bd90]"/>
+                </ddr4>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

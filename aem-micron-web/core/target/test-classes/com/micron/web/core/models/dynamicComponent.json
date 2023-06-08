@@ -1,0 +1,19 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "layout": "responsiveGrid",
+  "sling:resourceType": "micron-web/components/container",
+  "dynamic_component": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "resolution": "hd",
+    "productType": "laptop",
+    "keyboardLayout": "qwertz",
+    "jcr:lastModifiedBy": "admin",
+    "operatingSystem": "laptop",
+    "supportHdr": "false",
+    "screenSize": "14",
+    "jcr:created": "Mon May 15 2023 16:11:46 GMT+0530",
+    "jcr:lastModified": "Mon May 15 2023 16:12:05 GMT+0530",
+    "sling:resourceType": "micron-web/components/content/dynamic-component"
+  }
+}

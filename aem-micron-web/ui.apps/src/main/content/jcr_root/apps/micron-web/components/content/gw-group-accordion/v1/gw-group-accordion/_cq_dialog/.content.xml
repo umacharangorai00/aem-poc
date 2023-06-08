@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Accordions"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[assa-abloy-onecms.authoring.dialog-hide-show]"
+    height="50vh"
+    width="55vw">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <accordion-items-container
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Accordion items"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Title"
+                                name="./title"/>
+                            <accordion-items
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/well"
+                                    margin="{Boolean}true"
+                                    name="./sections">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <layout
+                                            granite:class="cq-dialog-dropdown-showhide-multifield"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            fieldLabel="Layout"
+                                            name="./layout">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <one-column-small
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="One column small"
+                                                    value="1-small"/>
+                                                <one-column-large
+                                                    jcr:primaryType="nt:unstructured"
+                                                    selected="{Boolean}true"
+                                                    text="One column large"
+                                                    value="1-large"/>
+                                                <two-columns
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Two columns"
+                                                    value="2-small"/>
+                                            </items>
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                cq-dialog-dropdown-showhide-target=".showhidetarget-column-container"/>
+                                        </layout>
+                                        <category
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="This value should be used in the filter dropdown to decide which accordion items to display"
+                                            fieldLabel="Category"
+                                            name="./category"/>
+                                        <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Title"
+                                            name="./title"/>
+                                        <column-1
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            margin="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <text
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                    name="./column1/text"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                    <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/assa-abloy-onecms/components/content/common/dialog-parts/rte-with-image-table/assa-abloy-rte-with-image-table/rtePlugins"/>
+                                                    <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/assa-abloy-onecms/components/content/common/dialog-parts/rte-with-image-table/assa-abloy-rte-with-image-table/uiSettings"/>
+                                                </text>
+                                                <sub-heading
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Sub-heading 1"
+                                                    name="./column1/assetsAndLinks/title"/>
+                                                <asset-folder
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Asset folder/parent page 1"
+                                                    name="./column1/assetsAndLinks/parentPath"
+                                                    rootPath="/content"/>
+                                                <reference-type
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                    name="./column1/assetsAndLinks/referenceType"
+                                                    value="parentPage"/>
+                                            </items>
+                                        </column-1>
+                                        <column-2
+                                            granite:class="showhidetarget-column-container"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            margin="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <text
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                    name="./column2/text"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                    <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/assa-abloy-onecms/components/content/common/dialog-parts/rte-with-image-table/assa-abloy-rte-with-image-table/rtePlugins"/>
+                                                    <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/assa-abloy-onecms/components/content/common/dialog-parts/rte-with-image-table/assa-abloy-rte-with-image-table/uiSettings"/>
+                                                </text>
+                                                <sub-heading
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Sub-heading 2"
+                                                    name="./column2/assetsAndLinks/title"/>
+                                                <asset-folder
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Asset folder/parent page 2"
+                                                    name="./column2/assetsAndLinks/parentPath"
+                                                    rootPath="/content"/>
+                                                <reference-type
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                    name="./column2/assetsAndLinks/referenceType"
+                                                    value="parentPage"/>
+                                            </items>
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                showhidetargetvalue="2-small"/>
+                                        </column-2>
+                                    </items>
+                                </field>
+                            </accordion-items>
+                        </items>
+                    </accordion-items-container>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

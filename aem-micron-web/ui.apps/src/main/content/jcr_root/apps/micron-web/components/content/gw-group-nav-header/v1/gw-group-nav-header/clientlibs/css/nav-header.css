@@ -1,0 +1,5 @@
+gw-group-nav-header.web-component > header > div,
+gw-group-nav-header.web-component > header > div > section {
+  position: relative !important;
+  z-index: 99;
+}

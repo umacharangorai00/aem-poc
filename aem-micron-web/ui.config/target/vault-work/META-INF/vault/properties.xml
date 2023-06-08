@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Micron.com web site - UI config</comment>
+<entry key="cloudManagerTarget">none</entry>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2023-04-12T17:42:02.556Z</entry>
+<entry key="groupId">com.micron.web</entry>
+<entry key="name">aem-micron-web.ui.config</entry>
+<entry key="description">UI config package for Micron.com web site</entry>
+<entry key="artifactId">aem-micron-web.ui.config</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.micron.web</entry>
+</properties>

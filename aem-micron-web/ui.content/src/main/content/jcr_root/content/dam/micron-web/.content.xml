@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        cq:conf="/conf/micron-web"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Micron.com web site">
+        <folderThumbnail/>
+    </jcr:content>
+    <asset.jpg/>
+    <us/>
+    <footer-logo.png/>
+    <image1.jpg/>
+    <intel-blog.png/>
+    <image_x0020__x0028_1_x0029_.png/>
+    <image_x0020__x0028_2_x0029_.png/>
+    <image.png/>
+    <dram.png/>
+    <ddr3.png/>
+    <ddr4.png/>
+    <ct2k32g4s266m.png/>
+</jcr:root>

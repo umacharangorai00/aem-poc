@@ -1,0 +1,16 @@
+<sly data-sly-use.pdpDesc="com.micron.web.core.models.ProductionDescriptionModel"/>
+
+<div class="cmp-helloworld">
+    <h2 class="cmp-helloworld__title">${pdpDesc.productDetailCfModel.title}</h2>
+    <div class="cmp-helloworld__item">
+        <p class="cmp-helloworld__item-label">${pdpDesc.productDetailCfModel.description}</p>
+
+    </div>
+
+
+    <div class="cmp-helloworld__item">
+		<sly data-sly-resource="${@path=pdpDesc.xfPath,selectors='content', wcmmode='disabled'}"></sly>
+    </div>
+</div>
+
+

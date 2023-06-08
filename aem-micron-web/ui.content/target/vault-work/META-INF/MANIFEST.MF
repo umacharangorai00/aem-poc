@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: Micron.com web site - UI content
+Implementation-Version: 0.0.1-SNAPSHOT
+Content-Package-Type: content
+Content-Package-Id: com.micron.web:aem-micron-web.ui.content:0.0.1-SNAPS
+ HOT
+Content-Package-Description: UI content package for Micron.com web site
+Content-Package-Dependencies: com.micron.web:aem-micron-web.ui.apps:0.0.
+ 1-SNAPSHOT
+Content-Package-Dependencies-Locations: com.micron.web:aem-micron-web.ui
+ .apps:0.0.1-SNAPSHOT=maven:com.micron.web:aem-micron-web.ui.apps:0.0.1-
+ SNAPSHOT:zip
+Content-Package-Roots: /conf/micron-web,/content/dam/micron-web,/content
+ /dam/micron-web/asset.jpg,/content/experience-fragments/micron-web,/con
+ tent/micron-web
+

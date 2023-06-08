@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: Micron.com web site - All
+Implementation-Version: 0.0.1-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.micron.web:aem-micron-web.all:0.0.1-SNAPSHOT
+Content-Package-Description: All content package for Micron.com web site
+Content-Package-Roots: /apps/micron-web-packages,/apps/micron-web-vendor
+ -packages,/apps/micron-web-vendor-packages/application/install/org.apac
+ he.servicemix.bundles.solr-solrj-8.11.0_1.jar,/apps/micron-web-vendor-p
+ ackages/application/install/org.apache.servicemix.bundles.zookeeper-3.8
+ .0_1.jar
+

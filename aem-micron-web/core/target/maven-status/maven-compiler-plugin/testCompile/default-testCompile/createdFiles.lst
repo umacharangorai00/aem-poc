@@ -1,0 +1,9 @@
+com\micron\web\core\constants\TestConstants.class
+com\micron\web\core\schedulers\SimpleScheduledTaskTest.class
+com\micron\web\core\filters\LoggingFilterTest.class
+com\micron\web\core\models\DynamicComponentModelTest.class
+com\micron\web\core\listeners\SimpleResourceListenerTest.class
+com\micron\web\core\models\HelloWorldModelTest.class
+com\micron\web\core\testcontext\AppAemContext$1.class
+com\micron\web\core\servlets\SimpleServletTest.class
+com\micron\web\core\testcontext\AppAemContext.class

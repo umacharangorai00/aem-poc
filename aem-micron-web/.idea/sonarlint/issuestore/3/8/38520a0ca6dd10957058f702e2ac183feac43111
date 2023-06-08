@@ -1,0 +1,13 @@
+
+c
+java:S1128"ARemove this unused import 'org.apache.commons.lang3.StringUtils'.(Øœ¼ºúÿÿÿÿ8è¡ôÆú0
+V
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ñÛ·k
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(èòğ¸
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(õÖì­8šŒçõø0
+{
+java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(¦ãà‰øÿÿÿÿ8¯àõø0
+B
+java:S16023",Remove useless curly braces around statement(¢ùÜÜ

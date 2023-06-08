@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/micron-web" mode="merge"/>
+    <filter root="/content/micron-web" mode="merge"/>
+    <filter root="/content/dam/micron-web" mode="merge">
+        <exclude pattern="/content/dam/micron-web(/.*)?"/>
+        <include pattern="/content/dam/micron-web/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/micron-web/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/micron-web" mode="merge"/>
+</workspaceFilter>

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: Micron.com web site - UI config
+Implementation-Version: 0.0.1-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.micron.web:aem-micron-web.ui.config:0.0.1-SNAPSH
+ OT
+Content-Package-Description: UI config package for Micron.com web site
+Content-Package-Roots: /apps/micron-web/osgiconfig
+

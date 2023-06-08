@@ -1,0 +1,8 @@
+<sly data-sly-use.ritchtextModel = "com.micron.web.core.models.RichTextMultiFieldModel"/>
+
+<sly data-sly-test.hasType="${ritchtextModel.title}">
+
+    <pre data-sly-test="${ritchtextModel.title}">Title:${ritchtextModel.title}</pre>
+    <pre data-sly-test="${ritchtextModel.description}">Description: ${ritchtextModel.description}</pre>
+</sly>
+<pre data-sly-test="${!hasType}">Ritch Text Component Component</pre>
