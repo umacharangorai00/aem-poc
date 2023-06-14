@@ -1,9 +1,0 @@
-
-h
-java:S2259F"FA "NullPointerException" could be thrown; "caConfig" is nullable here.(¢¶ªÕûÿÿÿÿ8¦µø·‰1
-J
-java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿ
-T
-java:S1172Z"7Remove this unused method parameter "resourceResolver".(îí˜è8˜ÝáÒ‰1
-W	java:S125M"<This block of commented-out lines of code should be removed.(ë‰®Z8‡ÒàÒ‰1
-X	java:S125\"<This block of commented-out lines of code should be removed.(øÕÓº8˜ÝáÒ‰1

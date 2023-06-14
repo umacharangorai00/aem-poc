@@ -1,11 +1,8 @@
 package com.micron.web.core.services.impl;
 
-import java.util.Collections;
-import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
 
-import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -15,6 +12,7 @@ import org.osgi.service.component.annotations.Reference;
 
 import com.micron.web.core.models.ProductDetailCfModel;
 import com.micron.web.core.services.ProductDescriptionService;
+import com.micron.web.core.solr.util.PocUtil;
 
 @Component(service = ProductDescriptionService.class, immediate = true)
 public class ProductDescriptionServiceImpl implements ProductDescriptionService {
@@ -61,8 +59,7 @@ public class ProductDescriptionServiceImpl implements ProductDescriptionService 
 
     private Optional<ResourceResolver> getResourceResolver() {
         try {
-            final Map<String, Object> param = Collections.singletonMap(ResourceResolverFactory.SUBSERVICE, SUB_SERVICE_NAME);
-            return Optional.of(this.resourceResolverFactory.getServiceResourceResolver(param));
+            return PocUtil.getResourceResolver(this.resourceResolverFactory);
         } catch (final LoginException e) {
             return Optional.empty();
         }

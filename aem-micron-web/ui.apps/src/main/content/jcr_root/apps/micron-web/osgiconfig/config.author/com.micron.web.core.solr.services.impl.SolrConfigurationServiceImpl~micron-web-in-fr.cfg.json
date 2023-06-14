@@ -1,0 +1,6 @@
+{
+  "solrServerEndPoint":"http://localhost:8983/solr",
+  "solrUserName":"admin",
+  "siteId":"micron-in-fr",
+  "solrPassword":"admin"
+}

@@ -3,8 +3,6 @@
 Ncore/src/main/java/com/micron/web/core/services/ProductDescriptionService.java,e\5\e5a5f74397a2c6cbb59c0c03537d6da7e889204e
 w
 Gcore/src/main/java/com/micron/web/core/models/ProductDetailCfModel.java,5\0\50d5c463aaf488e84f3acb8f1015e70cd1a5d735
-r
-Bcore/src/main/java/com/micron/web/core/helper/AttributeHelper.java,9\4\94dbf6a6c3300190d2fb0faeb75f0e18adb48159
 á
 Wui.apps/src/main/content/jcr_root/apps/micron-web/components/page/customfooterlibs.html,4\e\4ead736c0bfc5fa76b5b4efefea5062df39f4c48
 á
@@ -49,22 +47,14 @@ wui.apps/src/main/content/jcr_root/apps/micron-web/components/content/product-sp
 Mcore/src/main/java/com/micron/web/core/models/ProductionDescriptionModel.java,1\a\1a95153937476cb603914dbea3b6c8efeec77456
 |
 Lcore/src/main/java/com/micron/web/core/listeners/SimpleResourceListener.java,9\5\954c3e6c7655ebf02238632f4229c4b31384aac7
-á
-Wcore/src/main/java/com/micron/web/core/services/impl/ProductDescriptionServiceImpl.java,3\8\38520a0ca6dd10957058f702e2ac183feac43111
-
-Ocore/src/main/java/com/micron/web/core/workflow/ImageUploadWorkflowProcess.java,b\0\b0629f072bb38345670bdc6cb2af80520832c0c9
 z
 Jcore/src/main/java/com/micron/web/core/models/RichTextMultiFieldModel.java,b\f\bf719caf1328e7cabc6ab2719bc2e1a71261a857
-v
-Fcore/src/main/java/com/micron/web/core/helper/SpecificationHelper.java,2\c\2c6181f4b5e9ffdcd9f149f0369e39ea6701293b
 ù
 mui.apps/src/main/content/jcr_root/apps/micron-web/components/content/dynamic-component/dynamic-component.html,c\2\c2dd6090bdf7c440a3b66484df6542224a9cae6b
 ;
 all/pom.xml,d\4\d422027c0c9ce8a11e5e3bc0fc478b50c881a16a
 |
 Lcore/src/test/java/com/micron/web/core/models/DynamicComponentModelTest.java,7\f\7f4c347d681dd1876f56c5088854e820c424451a
-}
-Mcore/src/main/java/com/micron/web/core/filters/ProductPageResolverFilter.java,3\f\3fa52fc1e8a01266f55479352c6c255cc1686c76
 <
 core/pom.xml,7\6\76401d80919958a0380f14132adf8b8fc9c3d6ea
 s
@@ -75,21 +65,11 @@ x
 Hcore/src/main/java/com/micron/web/core/models/DynamicComponentModel.java,9\b\9b21adebbbb6458c983375a8028283594c6d58f6
 v
 Fcore/src/test/java/com/micron/web/core/models/HelloWorldModelTest.java,b\6\b6abdf0cc96754dbc4ae3d0690cc1aeb5f4460d9
-z
-Jcore/src/main/java/com/micron/web/core/models/impl/SpecificationModel.java,3\6\365f6c569cd618c73665921f79f6e07fb956b812
 q
 Acore/src/main/java/com/micron/web/core/models/Specifications.java,8\f\8f079912222d08c2c734824ea4cd6f2627e28b7e
-Ä
-Pui.content/src/main/content/jcr_root/conf/micron-web/_sling_configs/.content.xml,0\a\0ae6e63b0b2a02aa738ccfaf3adad72c149838ae
-Ü
-Vui.content/src/main/content/jcr_root/conf/micron-web/in/en/_sling_configs/.content.xml,8\5\85f3d8fa295d9c9b7f8f5e902677f108971df44e
 n
 >core/src/main/java/com/micron/web/core/config/PocCAConfig.java,6\1\61c839a43566447886f2b26f793454fb98d52164
 Ø
 ui.apps/src/main/content/jcr_root/apps/micron-web/components/content/contextaware-configuration/contextaware-configuration.html,4\1\415bfcdb6325741eb92bb61ba3cad29670e223b0
 u
 Ecore/src/main/java/com/micron/web/core/models/ContextAwareConfig.java,f\1\f17e9b16d7a745be2ec34891c1bad0cea6d27404
-~
-Ncore/src/main/java/com/micron/web/core/models/impl/ContextAwareConfigImpl.java,2\3\23058a21f2d842aa26578b3af60a59efe0838507
-r
-Bcore/src/main/java/com/micron/web/core/models/HelloWorldModel.java,e\1\e15dc0a06bf5d0f9a626c7fa32e6c7067a75ef2b

@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/micron-web",
+        "create path (nt:unstructured) /content/dam/micron-web/jcr:content",
+        "set properties on /content/dam/micron-web/jcr:content\n  set cq:conf{String} to /conf/micron-web\n  set jcr:title{String} to \"Micron.com web site\"\nend"
+    ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.micron.web.core.solr.config.SolrOsgiConfig">
+  <OCD id="com.micron.web.core.solr.config.SolrOsgiConfig" name="Solr osgi configuration" description="Osgi configuration for solr">
+    <AD id="siteId" type="String" name="Site Id"/>
+    <AD id="solrServerEndPoint" type="String" name="Server end point"/>
+    <AD id="solrUserName" type="String" name="User name"/>
+    <AD id="solrPassword" type="String" name="Password "/>
+    <AD id="solrResponseFiled" type="String" cardinality="2147483647" name="Solr response fields"/>
+  </OCD>
+  <Designate factoryPid="com.micron.web.core.solr.services.impl.SolrConfigurationServiceImpl">
+    <Object ocdref="com.micron.web.core.solr.config.SolrOsgiConfig"/>
+  </Designate>
+</metatype:MetaData>

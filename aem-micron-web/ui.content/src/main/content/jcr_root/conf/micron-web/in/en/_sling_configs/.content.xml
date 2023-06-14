@@ -8,4 +8,9 @@
         siteCountry="India English"
         siteLocale="English"
         siteSection="India"/>
+    <com.micron.web.core.solr.config.SolrCAConfig
+        jcr:primaryType="nt:unstructured"
+        collectionName="micron-in-en-core"
+        filedNames="\0"
+        siteId="micron-in-en"/>
 </jcr:root>

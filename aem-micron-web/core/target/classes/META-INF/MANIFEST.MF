@@ -16,42 +16,70 @@ Export-Package: com.micron.web.core.filters;version="1.0";uses:="javax
 Import-Package: javax.annotation;version="0.0.0",com.adobe.granite.wor
  kflow;version="[1.1,2)",com.adobe.granite.workflow.exec;version="[1.2
  ,2)",com.adobe.granite.workflow.metadata;version="[1.0,2)",com.day.cq
- .wcm.api;version="[1.27,2)",com.micron.web.core.filters;version="[1.0
- ,2)",com.micron.web.core.listeners;version="[1.0,2)",com.micron.web.c
- ore.schedulers;version="[1.0,2)",com.micron.web.core.servlets;version
- ="[1.0,2)",javax.jcr;version="[2.0,3)",javax.servlet;version="[3.1,4)
- ",org.apache.commons.lang3;version="[3.9,4)",org.apache.sling.api;ver
- sion="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apa
- che.sling.api.resource;version="[2.11,3)",org.apache.sling.api.resour
- ce.observation;version="[1.2,2)",org.apache.sling.api.servlets;versio
- n="[2.3,3)",org.apache.sling.caconfig;version="[1.0,2)",org.apache.sl
- ing.caconfig.annotation;version="[1.1,2)",org.apache.sling.models.ann
- otations;version="[1.5,2)",org.apache.sling.models.annotations.inject
- orspecific;version="[1.1,2)",org.slf4j;version="[1.7,2)"
+ .commons;version="[6.0,7)",com.day.cq.wcm.api;version="[1.27,2)",com.
+ micron.web.core.filters;version="[1.0,2)",com.micron.web.core.listene
+ rs;version="[1.0,2)",com.micron.web.core.schedulers;version="[1.0,2)"
+ ,com.micron.web.core.servlets;version="[1.0,2)",javax.jcr;version="[2
+ .0,3)",javax.servlet;version="[3.1,4)",org.apache.commons.lang3;versi
+ on="[3.9,4)",org.apache.sling.api;version="[2.3,3)",org.apache.sling.
+ api.request;version="[2.4,3)",org.apache.sling.api.resource;version="
+ [2.11,3)",org.apache.sling.api.resource.observation;version="[1.2,2)"
+ ,org.apache.sling.api.servlets;version="[2.3,3)",org.apache.sling.cac
+ onfig;version="[1.0,2)",org.apache.sling.caconfig.annotation;version=
+ "[1.1,2)",org.apache.sling.models.annotations;version="[1.5,2)",org.a
+ pache.sling.models.annotations.injectorspecific;version="[1.1,2)",org
+ .apache.solr.client.solrj;version="[8.11,9)",org.apache.solr.client.s
+ olrj.impl;version="[8.11,9)",org.apache.solr.client.solrj.response;ve
+ rsion="[8.11,9)",org.apache.solr.common;version="[8.11,9)",org.json;v
+ ersion="[20090211.0,20090212)",org.slf4j;version="[1.7,2)"
 Private-Package: com.micron.web.core.config,com.micron.web.core.helper
  ,com.micron.web.core.models.impl,com.micron.web.core.services,com.mic
- ron.web.core.services.impl,com.micron.web.core.workflow
+ ron.web.core.services.impl,com.micron.web.core.solr.config,com.micron
+ .web.core.solr.constants,com.micron.web.core.solr.helper,com.micron.w
+ eb.core.solr.services,com.micron.web.core.solr.services.impl,com.micr
+ on.web.core.solr.servlet,com.micron.web.core.solr.util,com.micron.web
+ .core.workflow
 Provide-Capability: osgi.service;objectClass:List<String>="com.adobe.g
  ranite.workflow.exec.WorkflowProcess";uses:="com.adobe.granite.workfl
  ow.exec",osgi.service;objectClass:List<String>="com.micron.web.core.s
  ervices.ProductDescriptionService";uses:="com.micron.web.core.service
- s",osgi.service;objectClass:List<String>="java.lang.Runnable",osgi.se
- rvice;objectClass:List<String>="javax.servlet.Filter";uses:="javax.se
- rvlet",osgi.service;objectClass:List<String>="javax.servlet.Servlet";
- uses:="javax.servlet",osgi.service;objectClass:List<String>="org.apac
- he.sling.api.resource.observation.ResourceChangeListener";uses:="org.
- apache.sling.api.resource.observation"
-Require-Capability: osgi.service;filter:="(objectClass=org.apache.slin
- g.api.resource.ResourceResolverFactory)";effective:=active,osgi.exten
- der;filter:="(&(osgi.extender=osgi.component)(version>=1.4.0)(!(versi
- on>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+ s",osgi.service;objectClass:List<String>="com.micron.web.core.solr.se
+ rvices.PageService";uses:="com.micron.web.core.solr.services",osgi.se
+ rvice;objectClass:List<String>="com.micron.web.core.solr.services.Sol
+ rConfigurationService";uses:="com.micron.web.core.solr.services",osgi
+ .service;objectClass:List<String>="com.micron.web.core.solr.services.
+ SolrService";uses:="com.micron.web.core.solr.services",osgi.service;o
+ bjectClass:List<String>="com.micron.web.core.solr.services.SolrServic
+ eManager";uses:="com.micron.web.core.solr.services",osgi.service;obje
+ ctClass:List<String>="java.lang.Runnable",osgi.service;objectClass:Li
+ st<String>="javax.servlet.Filter";uses:="javax.servlet",osgi.service;
+ objectClass:List<String>="javax.servlet.Servlet";uses:="javax.servlet
+ ",osgi.service;objectClass:List<String>="org.apache.sling.api.resourc
+ e.observation.ResourceChangeListener";uses:="org.apache.sling.api.res
+ ource.observation"
+Require-Capability: osgi.service;filter:="(objectClass=com.micron.web.
+ core.solr.services.PageService)";effective:=active,osgi.service;filte
+ r:="(objectClass=com.micron.web.core.solr.services.SolrConfigurationS
+ ervice)";effective:=active;resolution:=optional;cardinality:=multiple
+ ,osgi.service;filter:="(objectClass=com.micron.web.core.solr.services
+ .SolrService)";effective:=active,osgi.service;filter:="(objectClass=c
+ om.micron.web.core.solr.services.SolrServiceManager)";effective:=acti
+ ve,osgi.service;filter:="(objectClass=org.apache.sling.api.resource.R
+ esourceResolverFactory)";effective:=active,osgi.extender;filter:="(&(
+ osgi.extender=osgi.component)(version>=1.4.0)(!(version>=2.0.0)))",os
+ gi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Service-Component: OSGI-INF/com.micron.web.core.filters.LoggingFilter.
  xml,OSGI-INF/com.micron.web.core.filters.ProductPageResolverFilter.xm
  l,OSGI-INF/com.micron.web.core.listeners.SimpleResourceListener.xml,O
  SGI-INF/com.micron.web.core.schedulers.SimpleScheduledTask.xml,OSGI-I
  NF/com.micron.web.core.services.impl.ProductDescriptionServiceImpl.xm
  l,OSGI-INF/com.micron.web.core.servlets.SimpleServlet.xml,OSGI-INF/co
- m.micron.web.core.workflow.ImageUploadWorkflowProcess.xml
+ m.micron.web.core.solr.services.impl.PageServiceImpl.xml,OSGI-INF/com
+ .micron.web.core.solr.services.impl.SolrConfigurationServiceImpl.xml,
+ OSGI-INF/com.micron.web.core.solr.services.impl.SolrServiceImpl.xml,O
+ SGI-INF/com.micron.web.core.solr.services.impl.SolrServiceManagerImpl
+ .xml,OSGI-INF/com.micron.web.core.solr.servlet.PocSolrSearch.xml,OSGI
+ -INF/com.micron.web.core.workflow.ImageUploadWorkflowProcess.xml
 Sling-Model-Classes: com.micron.web.core.models.DynamicComponentModel,
  com.micron.web.core.models.HelloWorldModel,com.micron.web.core.models
  .ProductDetailCfModel,com.micron.web.core.models.ProductionDescriptio
