@@ -70,33 +70,28 @@ public class SolrSearchHelper {
             final ResourceResolver resourceResolver = this.request.getResourceResolver();
             this.solrConfigurationService = this.solrServiceManager.getServiceConfiguration(this.solrCAConfig.siteId());
             String searchOperation = this.request.getParameter("searchOperation");
+            List<PageDetails> pageDetail = pageService.getPageDetail(this.sitePath);
             if (StringUtils.equalsIgnoreCase(searchOperation, "index")) {
-                List<PageDetails> pageDetail = pageService.getPageDetail(this.sitePath);
+
                 String documentAdded = solrService.addDocuments(pageDetail, this);
                 response.getWriter().write(documentAdded);
 
             } else if (StringUtils.equalsIgnoreCase(searchOperation, "delete")) {
 
-            } else {
+                String documentDeleted = solrService.deleteIndex(pageDetail, this);
+                response.getWriter().write(documentDeleted);
 
+            } else if (StringUtils.equalsIgnoreCase(searchOperation, "search")){
+
+                String searchTerm = this.request.getParameter("searchTerm");
+                response.getWriter().write(solrService.searchResult(searchTerm,this).toString());
+
+            } else {
+                response.getWriter().write("No search operation is matching");
             }
 
         } catch (Exception exception) {
 
-        }
-
-    }
-
-
-    // Added for test the solr api
-    public void indexData(final PageService pageService, final SolrService solrService) {
-
-        try{
-            List<PageDetails> pageDetail = pageService.getPageDetail("/content/micron-web/in/en");
-            String documentAdded = solrService.testAddDocuments(pageDetail);
-            response.getWriter().write(documentAdded);
-        } catch (Exception exception) {
-            exception.printStackTrace();
         }
 
     }

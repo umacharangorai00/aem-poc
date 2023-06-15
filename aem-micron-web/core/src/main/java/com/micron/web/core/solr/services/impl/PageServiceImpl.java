@@ -1,7 +1,6 @@
 package com.micron.web.core.solr.services.impl;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,39 +25,39 @@ public class PageServiceImpl implements PageService {
     @Override
     public List<PageDetails> getPageDetail(final String sitePath) {
 
+        List<PageDetails> pageDetail = new ArrayList<>();
+
         try {
 
             final ResourceResolver resourceResolver = PocUtil.newResolver(this.resourceResolverFactory);
-            Page page = resourceResolver.adaptTo(PageManager.class).getPage(sitePath);
-            Iterator<Page> childPages = page.listChildren(null, true);
-            List<PageDetails> pageDetail = new ArrayList<>();
+            Optional<Page> page = Optional.ofNullable(resourceResolver.adaptTo(PageManager.class))
+                                            .map(pageManager -> pageManager.getPage(sitePath));
 
-            Optional.ofNullable(page)
-                    .map(parentPage -> pageDetail.add( new PageDetails(
-                    parentPage.getTitle(),
-                    parentPage.getName(),
-                    parentPage.getDescription(),
-                    parentPage.getPath() )));
+            page.map(parentPage -> pageDetail.add( new PageDetails(
+            parentPage.getTitle(),
+            parentPage.getName(),
+            parentPage.getDescription(),
+            parentPage.getPath() )));
 
-            while (childPages.hasNext()) {
+            page.map(Page :: listChildren)
+            .map(childPageIterator -> {
+                childPageIterator.forEachRemaining(childPage -> {
+                    String title = StringUtils.isNotBlank(childPage.getTitle()) ? childPage.getTitle() : childPage.getName();
+                    String name = childPage.getName();
+                    String description = StringUtils.isNotBlank(childPage.getDescription()) ? childPage.getDescription() : childPage.getName();
+                    String path = childPage.getPath();
+                    pageDetail.add(new PageDetails(title, name, description, path));
+                });
+                return pageDetail;
 
-                Page childPage = childPages.next();
-                String title = StringUtils.isNotBlank(childPage.getTitle()) ? childPage.getTitle() : childPage.getName();
-                String name = childPage.getName();
-                String description = StringUtils.isNotBlank(childPage.getDescription()) ? childPage.getDescription() : childPage.getName();
-                String path = childPage.getPath();
+            });
 
-                pageDetail.add(new PageDetails(title, name, description, path));
-
-
-            }
             return pageDetail;
 
         } catch (Exception exception) {
 
-
         }
-        return null;
+        return pageDetail;
     }
 
 }

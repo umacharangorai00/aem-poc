@@ -1,0 +1,16 @@
+
+E
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ
+E
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ
+F
+java:S1128"+Remove this unused import 'javax.jcr.Node'.(¼‰”Éÿÿÿÿÿ
+R
+java:S1854!"=Remove this useless assignment to local variable "imagePath".(×ƒ¸
+X
+java:S1854"";Remove this useless assignment to local variable "session".(á€ÔŒ8Üïç¹ü0
+>	java:S108%")Either remove or fill this block of code.(”ı¾
+C
+java:S1481!".Remove this unused "imagePath" local variable.(×ƒ¸
+I
+java:S1481"",Remove this unused "session" local variable.(á€ÔŒ8Üïç¹ü0

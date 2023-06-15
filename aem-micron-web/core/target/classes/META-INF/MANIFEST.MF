@@ -16,22 +16,23 @@ Export-Package: com.micron.web.core.filters;version="1.0";uses:="javax
 Import-Package: javax.annotation;version="0.0.0",com.adobe.granite.wor
  kflow;version="[1.1,2)",com.adobe.granite.workflow.exec;version="[1.2
  ,2)",com.adobe.granite.workflow.metadata;version="[1.0,2)",com.day.cq
- .commons;version="[6.0,7)",com.day.cq.wcm.api;version="[1.27,2)",com.
- micron.web.core.filters;version="[1.0,2)",com.micron.web.core.listene
- rs;version="[1.0,2)",com.micron.web.core.schedulers;version="[1.0,2)"
- ,com.micron.web.core.servlets;version="[1.0,2)",javax.jcr;version="[2
- .0,3)",javax.servlet;version="[3.1,4)",org.apache.commons.lang3;versi
- on="[3.9,4)",org.apache.sling.api;version="[2.3,3)",org.apache.sling.
- api.request;version="[2.4,3)",org.apache.sling.api.resource;version="
- [2.11,3)",org.apache.sling.api.resource.observation;version="[1.2,2)"
- ,org.apache.sling.api.servlets;version="[2.3,3)",org.apache.sling.cac
- onfig;version="[1.0,2)",org.apache.sling.caconfig.annotation;version=
- "[1.1,2)",org.apache.sling.models.annotations;version="[1.5,2)",org.a
- pache.sling.models.annotations.injectorspecific;version="[1.1,2)",org
- .apache.solr.client.solrj;version="[8.11,9)",org.apache.solr.client.s
- olrj.impl;version="[8.11,9)",org.apache.solr.client.solrj.response;ve
- rsion="[8.11,9)",org.apache.solr.common;version="[8.11,9)",org.json;v
- ersion="[20090211.0,20090212)",org.slf4j;version="[1.7,2)"
+ .wcm.api;version="[1.27,2)",com.micron.web.core.filters;version="[1.0
+ ,2)",com.micron.web.core.listeners;version="[1.0,2)",com.micron.web.c
+ ore.schedulers;version="[1.0,2)",com.micron.web.core.servlets;version
+ ="[1.0,2)",javax.jcr;version="[2.0,3)",javax.servlet;version="[3.1,4)
+ ",org.apache.commons.lang3;version="[3.9,4)",org.apache.sling.api;ver
+ sion="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apa
+ che.sling.api.resource;version="[2.11,3)",org.apache.sling.api.resour
+ ce.observation;version="[1.2,2)",org.apache.sling.api.servlets;versio
+ n="[2.3,3)",org.apache.sling.caconfig;version="[1.0,2)",org.apache.sl
+ ing.caconfig.annotation;version="[1.1,2)",org.apache.sling.models.ann
+ otations;version="[1.5,2)",org.apache.sling.models.annotations.inject
+ orspecific;version="[1.1,2)",org.apache.solr.client.solrj;version="[8
+ .11,9)",org.apache.solr.client.solrj.impl;version="[8.11,9)",org.apac
+ he.solr.client.solrj.response;version="[8.11,9)",org.apache.solr.comm
+ on;version="[8.11,9)",org.apache.solr.common.params;version="[8.11,9)
+ ",org.json;version="[20090211.0,20090212)",org.slf4j;version="[1.7,2)
+ "
 Private-Package: com.micron.web.core.config,com.micron.web.core.helper
  ,com.micron.web.core.models.impl,com.micron.web.core.services,com.mic
  ron.web.core.services.impl,com.micron.web.core.solr.config,com.micron

@@ -35,13 +35,11 @@ public class PocSolrSearch  extends SlingAllMethodsServlet {
     @Override
     protected void doGet(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws ServletException, IOException {
 
+
+
         SolrSearchHelper solrSearchHelper = new SolrSearchHelper(request, response, solrServiceManager);
 
         solrSearchHelper.searchSolr(pageService, solrService);
-
-        //Added for test the solr api
-        //SolrSearchHelper solrSearchHelper = new SolrSearchHelper(request, response);
-        //solrSearchHelper.indexData(pageService, solrService);
 
 
     }
