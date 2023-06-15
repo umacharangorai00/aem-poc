@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.micron.web.core.solr.services.impl.SolrConfigurationServiceImpl" configuration-policy="require" immediate="true" activate="activate" modified="activate">
+  <service>
+    <provide interface="com.micron.web.core.solr.services.SolrConfigurationService"/>
+  </service>
+  <implementation class="com.micron.web.core.solr.services.impl.SolrConfigurationServiceImpl"/>
+</scr:component>

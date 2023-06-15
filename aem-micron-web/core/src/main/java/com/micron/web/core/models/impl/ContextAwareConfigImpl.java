@@ -89,8 +89,6 @@ public class ContextAwareConfigImpl implements ContextAwareConfig {
 
     private PocCAConfig getContextAwareConfig(final Page currentPage, final ResourceResolver resourceResolver) {
 
-        //String currentPath = StringUtils.isNotBlank(currentPage) ? currentPage : StringUtils.EMPTY;
-        //Resource contentResource = resourceResolver.getResource(currentPath);
         if (currentPage != null) {
             ConfigurationBuilder configurationBuilder = currentPage.adaptTo(ConfigurationBuilder.class);
             if (configurationBuilder != null) {
