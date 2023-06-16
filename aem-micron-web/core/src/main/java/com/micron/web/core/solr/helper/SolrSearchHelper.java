@@ -96,4 +96,28 @@ public class SolrSearchHelper {
 
     }
 
+    /**
+     * index page during page activation
+     * @param pagePath
+     * @param pageService
+     * @param solrService
+     * @param resourceResolver
+     */
+    public void indexPageContent(String pagePath, PageService  pageService, SolrService solrService, ResourceResolver  resourceResolver) {
+
+        PageDetails pageDetail = pageService.getPageContent(this.sitePath, resourceResolver);
+        solrService.indexContent(pageDetail, this);
+
+    }
+
+    public void deletePageIndex(String pagePath, SolrService solrService) {
+
+        solrService.deletePageIndex(pagePath, this);
+
+    }
+
+
+
+
+
 }

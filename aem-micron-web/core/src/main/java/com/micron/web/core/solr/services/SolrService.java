@@ -12,5 +12,7 @@ public interface SolrService {
     String addDocuments(List<PageDetails> pageDetail, SolrSearchHelper solrSearchHelper);
     String deleteIndex(List<PageDetails> pageDetail, SolrSearchHelper solrSearchHelper);
     JSONArray searchResult(String searchTerm, SolrSearchHelper solrSearchHelper);
+    void indexContent(PageDetails pageDetails, SolrSearchHelper solrSearchHelper);
+    void deletePageIndex(String pagePath, SolrSearchHelper solrSearchHelper);
 
 }

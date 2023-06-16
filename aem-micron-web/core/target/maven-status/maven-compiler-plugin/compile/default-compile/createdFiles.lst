@@ -10,6 +10,7 @@ com\micron\web\core\solr\servlet\PocSolrSearch.class
 com\micron\web\core\solr\services\PageService.class
 com\micron\web\core\models\RichTextMultiFieldModel.class
 com\micron\web\core\schedulers\SimpleScheduledTask.class
+com\micron\web\core\solr\handler\SolrEventHandlerService.class
 com\micron\web\core\models\HelloWorldModel.class
 com\micron\web\core\solr\helper\PageDetails.class
 com\micron\web\core\config\PocCAConfig.class

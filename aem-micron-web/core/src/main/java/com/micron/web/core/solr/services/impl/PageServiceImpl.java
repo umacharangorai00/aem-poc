@@ -3,6 +3,7 @@ package com.micron.web.core.solr.services.impl;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicReference;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -58,6 +59,26 @@ public class PageServiceImpl implements PageService {
 
         }
         return pageDetail;
+    }
+
+    @Override
+    public PageDetails getPageContent(final String sitePath, ResourceResolver resourceResolver) {
+
+        final AtomicReference<PageDetails> pageDetails = null;
+        Optional<Page> page = Optional.ofNullable(resourceResolver.adaptTo(PageManager.class))
+                                      .map(pageManager -> pageManager.getPage(sitePath));
+
+        page.map(contentPage -> {
+            pageDetails.set(new PageDetails(
+              contentPage.getTitle(),
+              contentPage.getName(),
+              contentPage.getDescription(),
+              contentPage.getPath()
+            ));
+            return pageDetails.get();
+        });
+
+        return pageDetails.get();
     }
 
 }
