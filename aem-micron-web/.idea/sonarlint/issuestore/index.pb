@@ -103,10 +103,6 @@ r
 Bcore/src/main/java/com/micron/web/core/models/HelloWorldModel.java,e\1\e15dc0a06bf5d0f9a626c7fa32e6c7067a75ef2b
 s
 Ccore/src/main/java/com/micron/web/core/solr/helper/PageDetails.java,0\8\085f85b234ad13d418c0e71e3733d9331a1132b9
-‚
-Rcore/src/main/java/com/micron/web/core/solr/services/SolrConfigurationService.java,0\0\004fe58b4a544dd69c14275aa2411e12a55e05f4
-|
-Lcore/src/main/java/com/micron/web/core/solr/services/SolrServiceManager.java,7\9\79d8d5a33eed73515d2b15a5819698c49552e293
 t
 Dcore/src/main/java/com/micron/web/core/solr/config/SolrCAConfig.java,9\e\9ee933c405152446cb5acdd48409942820c4e819
 †
@@ -121,9 +117,5 @@ m
 [core/src/main/java/com/micron/web/core/solr/services/impl/SolrConfigurationServiceImpl.java,2\a\2a6e6f8e8b7e98fcd036d5c311c2d2b26e112682
 v
 Fcore/src/main/java/com/micron/web/core/solr/config/SolrOsgiConfig.java,0\6\06be1d6f37724c6e3d15a538b5ee239cc3e5daf1
-u
-Ecore/src/main/java/com/micron/web/core/solr/services/PageService.java,6\2\62a73b5b13d7a027a5cb0abcff300aa026228cf4
-n
->core/src/main/java/com/micron/web/core/solr/util/SolrUtil.java,a\f\af61786bce5790d93d224f2ff300231406cef032
 “
 cui.apps/src/main/content/jcr_root/apps/excel-to-json/clientlibs/clientlib-base/css/excel-upload.css,3\1\3179c066c7e1d76d99f85c9a570daca0a0b6c749

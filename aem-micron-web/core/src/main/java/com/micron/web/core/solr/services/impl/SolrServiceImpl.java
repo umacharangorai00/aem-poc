@@ -134,4 +134,51 @@ public class SolrServiceImpl implements SolrService {
         return searchResult;
     }
 
+    @Override
+    public void indexContent(final PageDetails pageDetails, final SolrSearchHelper solrSearchHelper) {
+
+        try{
+
+            final String solrServer = solrSearchHelper.getSolrConfigurationService().getSolrServerEndPoint();
+            final SolrClient solrClient = SolrUtil.getSolrClient(solrServer);
+            final String coreName = solrSearchHelper.getSolrCAConfig().collectionName();
+
+
+            final SolrInputDocument doc = new SolrInputDocument();
+            doc.addField(SolrConstants.PAGE_ID, SolrUtil.getPageName(pageDetails.getPath()));
+            doc.addField(SolrConstants.PAGE_NAME, pageDetails.getName());
+            doc.addField(SolrConstants.PAGE_TITLE, pageDetails.getTitle());
+            doc.addField(SolrConstants.PAGE_DESCRIPTION, pageDetails.getDescription());
+            try {
+                final UpdateResponse updateResponse = solrClient.add(coreName, doc);
+            } catch (SolrServerException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            solrClient.commit(coreName);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void deletePageIndex(final String pagePath, final SolrSearchHelper solrSearchHelper) {
+
+        final String solrServer = solrSearchHelper.getSolrConfigurationService().getSolrServerEndPoint();
+        final SolrClient solrClient = SolrUtil.getSolrClient(solrServer);
+        final String coreName = solrSearchHelper.getSolrCAConfig().collectionName();
+        try {
+            final UpdateResponse updateResponse = solrClient.deleteById(coreName,pagePath);
+            solrClient.commit(coreName);
+
+        } catch (SolrServerException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 }

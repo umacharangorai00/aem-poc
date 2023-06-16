@@ -29,6 +29,7 @@ C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\ja
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\models\Specifications.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\config\SolrOsgiConfig.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\constants\SolrConstants.java
+C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\handler\SolrEventHandlerService.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\listeners\package-info.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\servlets\package-info.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\workflow\ImageUploadWorkflowProcess.java
