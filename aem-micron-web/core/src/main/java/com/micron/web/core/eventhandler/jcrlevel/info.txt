@@ -1,0 +1,16 @@
+JCR Api for event handling
+--------------------------
+1. Event handling at JCR/Repository/Node level.
+2. An EventListener can be registered via the ObservationManager object.
+3. Non resource event cannot be handled by this handler.
+
+Events:
+=======
+
+Event.NODE_ADDED --------> 1
+Event.NODE_REMOVED -------> 2
+Event.NODE_MOVED ---------> 32
+Event.PERSIST -----------> 64
+Event.PROPERTY_ADDED ---------> 4
+Event.PROPERTY_CHANGED --------> 16
+Event.PROPERTY_REMOVED ---------> 8

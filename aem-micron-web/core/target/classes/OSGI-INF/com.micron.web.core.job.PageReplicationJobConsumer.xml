@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.micron.web.core.job.PageReplicationJobConsumer" immediate="true">
+  <property name="service.id" type="String" value="Page Replication Job"/>
+  <property name="service.description" type="String" value="This job replicates the given payload"/>
+  <property name="job.topics" type="String" value="com/micron-web/poc/testing"/>
+  <service>
+    <provide interface="org.apache.sling.event.jobs.consumer.JobConsumer"/>
+  </service>
+  <reference name="replicationService" interface="com.micron.web.core.services.ReplicationService" field="replicationService"/>
+  <implementation class="com.micron.web.core.job.PageReplicationJobConsumer"/>
+</scr:component>

@@ -1,0 +1,10 @@
+Sling Job:
+
+There are three apis for job
+
+1. JobManager
+    It uses to create the job with the job topic and the an properties for job related information.
+2. JobConsumer
+    It consumes the job using the job topic.
+3. JobExtractor
+    If the job consumer needs more features like providing progress information or adding more information of the processing,JobExecutor should be implemented.

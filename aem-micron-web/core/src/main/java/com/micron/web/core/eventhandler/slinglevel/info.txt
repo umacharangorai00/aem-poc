@@ -1,0 +1,13 @@
+Sling api for event handling
+----------------------------
+1. Can be configured to listen to only specific paths.
+Multiple watch paths can also be configured to provide it a more granular approach.
+
+2. For a bulk operation concerning N resources, listener will be executed ONLY once.
+Thus, total number of persistence operations = 1 (via handler) + 1 (Bulk operation) = 2
+
+3.  This is only recommended for resource change events.
+
+4. Avoid long-lived sessions.
+
+5. This is register using Framework Service Registry
