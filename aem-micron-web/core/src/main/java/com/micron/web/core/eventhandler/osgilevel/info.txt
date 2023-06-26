@@ -1,0 +1,7 @@
+OSGI api for event handling
+---------------------------
+
+1. Its osgi api for event handling.
+2. It can handle both type of event resource and non resource.
+3. Non resource event like Replication event, Workflow Event.
+4. This is register using Framework Service Registry

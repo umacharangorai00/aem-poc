@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.micron.web.core.eventhandler.osgilevel.PageActivationEventHandler" immediate="true">
+  <property name="event.topics" type="String">org/apache/sling/api/resource/Resource/ADDED
+org/apache/sling/api/resource/Resource/CHANGED
+org/apache/sling/api/resource/Resource/REMOVED</property>
+  <property name="event.filter" type="String" value="(path=/content/micron-web/in/de/job-testing-page/*)"/>
+  <service>
+    <provide interface="org.osgi.service.event.EventHandler"/>
+  </service>
+  <reference name="jobManager" interface="org.apache.sling.event.jobs.JobManager" field="jobManager"/>
+  <implementation class="com.micron.web.core.eventhandler.osgilevel.PageActivationEventHandler"/>
+</scr:component>

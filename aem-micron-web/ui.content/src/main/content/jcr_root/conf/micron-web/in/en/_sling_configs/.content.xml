@@ -12,5 +12,6 @@
         jcr:primaryType="nt:unstructured"
         collectionName="micron-in-en-core"
         filedNames="\0"
-        siteId="micron-in-en"/>
+        siteId="micron-in-en"
+        wrokflowApprover="workflow-admin-en"/>
 </jcr:root>

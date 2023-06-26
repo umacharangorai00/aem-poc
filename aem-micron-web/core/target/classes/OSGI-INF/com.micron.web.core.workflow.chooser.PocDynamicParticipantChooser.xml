@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.micron.web.core.workflow.chooser.PocDynamicParticipantChooser" immediate="true">
+  <property name="chooser.label" type="String" value="POC Dynamic Participant Workflow"/>
+  <service>
+    <provide interface="com.adobe.granite.workflow.exec.ParticipantStepChooser"/>
+  </service>
+  <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resourceResolverFactory"/>
+  <implementation class="com.micron.web.core.workflow.chooser.PocDynamicParticipantChooser"/>
+</scr:component>

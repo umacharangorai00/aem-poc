@@ -16,7 +16,7 @@ import com.micron.web.core.solr.config.SolrCAConfig;
 
 public class PocUtil {
 
-    private static final String SUB_SERVICE_NAME= "poc-service-user";
+    public static final String SUB_SERVICE_NAME= "poc-service-user";
 
     public PocUtil() {
 
