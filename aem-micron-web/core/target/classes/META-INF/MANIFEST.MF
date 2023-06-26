@@ -48,32 +48,34 @@ Private-Package: com.micron.web.core.config,com.micron.web.core.consta
  ,com.micron.web.core.solr.handler,com.micron.web.core.solr.helper,com
  .micron.web.core.solr.services,com.micron.web.core.solr.services.impl
  ,com.micron.web.core.solr.servlet,com.micron.web.core.solr.util,com.m
- icron.web.core.workflow
+ icron.web.core.workflow.chooser,com.micron.web.core.workflow.process
 Provide-Capability: osgi.service;objectClass:List<String>="com.adobe.g
- ranite.workflow.exec.WorkflowProcess";uses:="com.adobe.granite.workfl
- ow.exec",osgi.service;objectClass:List<String>="com.micron.web.core.s
- ervices.ProductDescriptionService";uses:="com.micron.web.core.service
- s",osgi.service;objectClass:List<String>="com.micron.web.core.service
- s.ReplicationService";uses:="com.micron.web.core.services",osgi.servi
- ce;objectClass:List<String>="com.micron.web.core.solr.services.PageSe
+ ranite.workflow.exec.ParticipantStepChooser";uses:="com.adobe.granite
+ .workflow.exec",osgi.service;objectClass:List<String>="com.adobe.gran
+ ite.workflow.exec.WorkflowProcess";uses:="com.adobe.granite.workflow.
+ exec",osgi.service;objectClass:List<String>="com.micron.web.core.serv
+ ices.ProductDescriptionService";uses:="com.micron.web.core.services",
+ osgi.service;objectClass:List<String>="com.micron.web.core.services.R
+ eplicationService";uses:="com.micron.web.core.services",osgi.service;
+ objectClass:List<String>="com.micron.web.core.solr.services.PageServi
+ ce";uses:="com.micron.web.core.solr.services",osgi.service;objectClas
+ s:List<String>="com.micron.web.core.solr.services.SolrConfigurationSe
  rvice";uses:="com.micron.web.core.solr.services",osgi.service;objectC
- lass:List<String>="com.micron.web.core.solr.services.SolrConfiguratio
- nService";uses:="com.micron.web.core.solr.services",osgi.service;obje
- ctClass:List<String>="com.micron.web.core.solr.services.SolrService";
- uses:="com.micron.web.core.solr.services",osgi.service;objectClass:Li
- st<String>="com.micron.web.core.solr.services.SolrServiceManager";use
+ lass:List<String>="com.micron.web.core.solr.services.SolrService";use
  s:="com.micron.web.core.solr.services",osgi.service;objectClass:List<
- String>="java.lang.Runnable",osgi.service;objectClass:List<String>="j
- avax.jcr.observation.EventListener";uses:="javax.jcr.observation",osg
- i.service;objectClass:List<String>="javax.servlet.Filter";uses:="java
- x.servlet",osgi.service;objectClass:List<String>="javax.servlet.Servl
- et";uses:="javax.servlet",osgi.service;objectClass:List<String>="org.
- apache.sling.api.resource.observation.ResourceChangeListener";uses:="
- org.apache.sling.api.resource.observation",osgi.service;objectClass:L
- ist<String>="org.apache.sling.event.jobs.consumer.JobConsumer";uses:=
- "org.apache.sling.event.jobs.consumer",osgi.service;objectClass:List<
- String>="org.osgi.service.event.EventHandler";uses:="org.osgi.service
- .event"
+ String>="com.micron.web.core.solr.services.SolrServiceManager";uses:=
+ "com.micron.web.core.solr.services",osgi.service;objectClass:List<Str
+ ing>="java.lang.Runnable",osgi.service;objectClass:List<String>="java
+ x.jcr.observation.EventListener";uses:="javax.jcr.observation",osgi.s
+ ervice;objectClass:List<String>="javax.servlet.Filter";uses:="javax.s
+ ervlet",osgi.service;objectClass:List<String>="javax.servlet.Servlet"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="org.apa
+ che.sling.api.resource.observation.ResourceChangeListener";uses:="org
+ .apache.sling.api.resource.observation",osgi.service;objectClass:List
+ <String>="org.apache.sling.event.jobs.consumer.JobConsumer";uses:="or
+ g.apache.sling.event.jobs.consumer",osgi.service;objectClass:List<Str
+ ing>="org.osgi.service.event.EventHandler";uses:="org.osgi.service.ev
+ ent"
 Require-Capability: osgi.service;filter:="(objectClass=com.day.cq.repl
  ication.Replicator)";effective:=active,osgi.service;filter:="(objectC
  lass=com.micron.web.core.services.ReplicationService)";effective:=act
@@ -111,7 +113,9 @@ Service-Component: OSGI-INF/com.micron.web.core.eventhandler.jcrlevel.
  lr.services.impl.SolrServiceImpl.xml,OSGI-INF/com.micron.web.core.sol
  r.services.impl.SolrServiceManagerImpl.xml,OSGI-INF/com.micron.web.co
  re.solr.servlet.PocSolrSearch.xml,OSGI-INF/com.micron.web.core.workfl
- ow.ImageUploadWorkflowProcess.xml
+ ow.chooser.PocDynamicParticipantChooser.xml,OSGI-INF/com.micron.web.c
+ ore.workflow.process.ImageUploadWorkflowProcess.xml,OSGI-INF/com.micr
+ on.web.core.workflow.process.PageActivationWorkflowProcess.xml
 Sling-Model-Classes: com.micron.web.core.models.DynamicComponentModel,
  com.micron.web.core.models.HelloWorldModel,com.micron.web.core.models
  .ProductDetailCfModel,com.micron.web.core.models.ProductionDescriptio

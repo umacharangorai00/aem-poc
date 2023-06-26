@@ -1,9 +1,5 @@
-package com.micron.web.core.workflow;
+package com.micron.web.core.workflow.process;
 
-import java.util.Iterator;
-import java.util.Set;
-
-import javax.jcr.Node;
 import javax.jcr.Session;
 
 import org.osgi.service.component.annotations.Component;

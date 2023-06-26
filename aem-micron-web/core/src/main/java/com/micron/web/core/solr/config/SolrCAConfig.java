@@ -15,4 +15,8 @@ public @interface SolrCAConfig {
     @Property(label = "Filed names", description = "Filed names")
     String filedNames();
 
+    @Property(label = "Workflow Approver", description = "Name of the workflow approver")
+    String workflowApprover();
+
+
 }

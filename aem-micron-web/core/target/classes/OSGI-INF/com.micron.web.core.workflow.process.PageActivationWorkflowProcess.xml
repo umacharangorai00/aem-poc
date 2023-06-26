@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.micron.web.core.workflow.process.PageActivationWorkflowProcess" immediate="true">
+  <property name="process.label" type="String" value=" Micron Page Activation Process"/>
+  <service>
+    <provide interface="com.adobe.granite.workflow.exec.WorkflowProcess"/>
+  </service>
+  <reference name="jobManager" interface="org.apache.sling.event.jobs.JobManager" field="jobManager"/>
+  <implementation class="com.micron.web.core.workflow.process.PageActivationWorkflowProcess"/>
+</scr:component>

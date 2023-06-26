@@ -15,17 +15,18 @@ C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\ja
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\listeners\SimpleResourceListener.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\services\ProductDescriptionService.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\filters\LoggingFilter.java
+C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\workflow\process\PageActivationWorkflowProcess.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\config\SolrCAConfig.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\models\RichTextMultiFieldModel.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\models\Specifications.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\config\SolrOsgiConfig.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\handler\SolrEventHandlerService.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\listeners\package-info.java
-C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\workflow\ImageUploadWorkflowProcess.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\eventhandler\osgilevel\PageActivationEventHandler.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\services\impl\PageServiceImpl.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\services\impl\SolrServiceImpl.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\helper\SpecificationHelper.java
+C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\workflow\process\ImageUploadWorkflowProcess.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\helper\SolrSearchHelper.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\models\package-info.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\eventhandler\slinglevel\SlingEventHandler.java
@@ -35,6 +36,7 @@ C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\ja
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\models\ProductDetailCfModel.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\schedulers\SimpleScheduledTask.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\servlet\PocSolrSearch.java
+C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\workflow\chooser\PocDynamicParticipantChooser.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\schedulers\package-info.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\models\DynamicComponentModel.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\constants\AemConstant.java
