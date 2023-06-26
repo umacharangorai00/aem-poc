@@ -15,6 +15,7 @@ C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\ja
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\listeners\SimpleResourceListener.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\services\ProductDescriptionService.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\filters\LoggingFilter.java
+C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\workflow\process\MicronPocCustomStepProcess.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\workflow\process\PageActivationWorkflowProcess.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\config\SolrCAConfig.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\models\RichTextMultiFieldModel.java

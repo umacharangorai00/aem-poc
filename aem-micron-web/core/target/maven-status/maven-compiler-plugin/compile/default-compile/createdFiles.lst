@@ -15,6 +15,7 @@ com\micron\web\core\models\impl\ContextAwareConfigImpl.class
 com\micron\web\core\schedulers\SimpleScheduledTask$Config.class
 com\micron\web\core\filters\LoggingFilter.class
 com\micron\web\core\servlets\SimpleServlet.class
+com\micron\web\core\workflow\process\MicronPocCustomStepProcess.class
 com\micron\web\core\services\ProductDescriptionService.class
 com\micron\web\core\servlets\package-info.class
 com\micron\web\core\solr\services\SolrServiceManager.class

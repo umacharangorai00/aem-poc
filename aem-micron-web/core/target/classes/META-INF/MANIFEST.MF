@@ -115,7 +115,9 @@ Service-Component: OSGI-INF/com.micron.web.core.eventhandler.jcrlevel.
  re.solr.servlet.PocSolrSearch.xml,OSGI-INF/com.micron.web.core.workfl
  ow.chooser.PocDynamicParticipantChooser.xml,OSGI-INF/com.micron.web.c
  ore.workflow.process.ImageUploadWorkflowProcess.xml,OSGI-INF/com.micr
- on.web.core.workflow.process.PageActivationWorkflowProcess.xml
+ on.web.core.workflow.process.MicronPocCustomStepProcess.xml,OSGI-INF/
+ com.micron.web.core.workflow.process.PageActivationWorkflowProcess.xm
+ l
 Sling-Model-Classes: com.micron.web.core.models.DynamicComponentModel,
  com.micron.web.core.models.HelloWorldModel,com.micron.web.core.models
  .ProductDetailCfModel,com.micron.web.core.models.ProductionDescriptio
