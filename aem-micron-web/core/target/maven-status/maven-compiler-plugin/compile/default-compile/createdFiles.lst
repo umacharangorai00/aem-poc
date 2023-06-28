@@ -24,13 +24,17 @@ com\micron\web\core\listeners\package-info.class
 com\micron\web\core\filters\ProductPageResolverFilter.class
 com\micron\web\core\solr\helper\SolrSearchHelper.class
 com\micron\web\core\solr\util\SolrUtil.class
+com\micron\web\core\chatgpt\beans\Message.class
 com\micron\web\core\eventhandler\osgilevel\PageActivationEventHandler.class
 com\micron\web\core\solr\services\PageService.class
 com\micron\web\core\models\RichTextMultiFieldModel.class
 com\micron\web\core\workflow\process\ImageUploadWorkflowProcess.class
+com\micron\web\core\chatgpt\beans\ChatGptResponse.class
+com\micron\web\core\chatgpt\servlet\ChatServlet.class
 com\micron\web\core\models\HelloWorldModel.class
 com\micron\web\core\eventhandler\osgilevel\PageReplicationEventHandler.class
 com\micron\web\core\solr\helper\PageDetails.class
+com\micron\web\core\chatgpt\beans\ChatGptResponse$Choice.class
 com\micron\web\core\config\PocCAConfig.class
 com\micron\web\core\models\impl\SpecificationModel.class
 com\micron\web\core\workflow\chooser\PocDynamicParticipantChooser.class
@@ -38,6 +42,7 @@ com\micron\web\core\job\PageReplicationJobConsumer.class
 com\micron\web\core\solr\services\SolrService.class
 com\micron\web\core\solr\services\impl\PageServiceImpl.class
 com\micron\web\core\models\ProductionDescriptionModel.class
+com\micron\web\core\chatgpt\beans\ChatGptRequest.class
 com\micron\web\core\models\ContextAwareConfig.class
 com\micron\web\core\solr\config\SolrCAConfig.class
 com\micron\web\core\workflow\process\PageActivationWorkflowProcess.class

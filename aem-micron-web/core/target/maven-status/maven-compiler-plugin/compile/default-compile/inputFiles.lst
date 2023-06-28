@@ -2,6 +2,7 @@ C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\ja
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\services\PageService.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\helper\AttributeHelper.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\filters\ProductPageResolverFilter.java
+C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\chatgpt\beans\ChatGptResponse.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\services\impl\SolrConfigurationServiceImpl.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\services\SolrConfigurationService.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\services\SolrServiceManager.java
@@ -12,8 +13,10 @@ C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\ja
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\eventhandler\osgilevel\OsgiEventHandler.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\models\ProductionDescriptionModel.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\services\impl\ReplicationServiceImpl.java
+C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\chatgpt\beans\Message.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\listeners\SimpleResourceListener.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\services\ProductDescriptionService.java
+C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\chatgpt\beans\ChatGptRequest.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\filters\LoggingFilter.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\workflow\process\MicronPocCustomStepProcess.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\workflow\process\PageActivationWorkflowProcess.java
@@ -23,6 +26,7 @@ C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\ja
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\config\SolrOsgiConfig.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\handler\SolrEventHandlerService.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\listeners\package-info.java
+C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\chatgpt\servlet\ChatServlet.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\eventhandler\osgilevel\PageActivationEventHandler.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\services\impl\PageServiceImpl.java
 C:\Micron-POC\development\aem-work-space\aem-poc\aem-micron-web\core\src\main\java\com\micron\web\core\solr\services\impl\SolrServiceImpl.java
