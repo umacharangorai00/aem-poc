@@ -45,7 +45,7 @@ public class ChatServlet extends SlingSafeMethodsServlet {
             // Generate the chat message using ChatGPT API
             String requestBody = MAPPER.writeValueAsString(new ChatGptRequest(prompt,"gpt-3.5-turbo","user"));
             HttpPost request = new HttpPost(CHATGPT_API_ENDPOINT);
-            request.addHeader("Authorization", "Bearer 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");
+            request.addHeader("Authorization", "Bearer <api key>");
             request.addHeader("Content-Type", "application/json");
             request.setEntity(new StringEntity(requestBody));
             System.out.println("requestBody: "+requestBody);
